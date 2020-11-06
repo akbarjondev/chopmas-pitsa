@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chopmas pitsa</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="h-100">
+	<div class="jumbotron">
+	  <h1 class="display-4">Salom, Hurmatli mijoz!</h1>
+	  <p class="lead">Chopmas pitsaga xush kelibsiz. Bu yerda siz o'zingiz istagan ko'rinishda pitsa buyurtma qilishingiz mumkin. Sizning buyurtmangizni qisqa vaqt ichida yetkazib beramiz. Bizni tanlaganingiz uchun tashakkur!</p>
+	  <hr class="my-4">
+	  <p>Quyida siz, hozirda bizning ro'yxatda mavjud mahsulotlardan pitsa tayyorlaysiz.</p>
+	</div>
+
+	<div class="container">
+		<form class="pizza-form" action="https://echo.htmlacademy.ru" method="GET">
+			<div class="alert alert-warning alert-dismissible fade show d-none pr-4" id="orderAlert" role="alert">
+			  <p class="display-4">Buyurtma:</p>
+			  <hr>
+			  <div><strong>Nonining qalinligi:</strong> <span id="order"></span></div>
+			  <div><strong>Ustidagi mahsuloti:</strong> <span id="orderIngredient"></span></div>
+			  <div><strong>Qo'shimcha:</strong> <span id="orderTopping"></span></div>
+			  <hr>
+				<button type="submit" class="btn btn-success">Tasdiqlash</button>
+			</div>
+
+			<div class="form-group bg-light p-4 rounded">
+		    <label for="pizza-bread"><span class="font-weight-bold">Pitsa nonining qalinligi?</span></label>
+		    <select class="pizza-bread" name="pizza-bread" id="pizza-bread" required>
+		    	<option value="" selected disabled>Tanlang</option>
+		    </select>
+		    <small class="form-text text-muted" id="selectHelp">Pitsa noni qancha qalin bo'lsa pishirishga qo'shimcha 10 daqiqa ketadi.</small>
+		  </div>
+
+		  <div class="ingredient-all-wrapper d-none bg-light p-4 rounded">
+			  <div class="font-weight-bold">Pitsaning ustiga joylanadigan narsalar turlari:</div>
+			  <div class="d-flex flex-wrap form-group form-check ingredient-wrapper"></div>
+		  </div>
+
+		  <div class="topping d-none bg-light p-4 rounded mt-4"></div>
+		</form>	
+	</div>
+	
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
